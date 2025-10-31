@@ -2,7 +2,8 @@
 title: FOUNDATIONS OF FINANCE
 ---
 
-# GROUP PROJECT (to be done in groups of maximum 3 students -- no exceptions) (Weightage -- 20%)
+# GROUP PROJECT
+
 
 Analyse the Balance sheet, Income Statement and Cash Flow statement of
 any **BSE-500 company with a 5 year track record (Bombay Stock Exchange
