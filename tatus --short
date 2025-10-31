@@ -1,0 +1,150 @@
+[1mdiff --git a/Readme.md b/Readme.md[m
+[1mindex aac077e..12bd8c7 100644[m
+[1m--- a/Readme.md[m
+[1m+++ b/Readme.md[m
+[36m@@ -1,81 +1,179 @@[m
+[31m----[m
+[31m-title: FOUNDATIONS OF FINANCE[m
+[31m----[m
+[32m+[m[32m# EICHER Motors Limited - Financial Analysis Report[m
+ [m
+[31m-# GROUP PROJECT (to be done in groups of maximum 3 students -- no exceptions) (Weightage -- 20%)[m
+[32m+[m[32m## 📊 Project Overview[m
+ [m
+[31m-Analyse the Balance sheet, Income Statement and Cash Flow statement of[m
+[31m-any **BSE-500 company with a 5 year track record (Bombay Stock Exchange[m
+[31m--500 company).[m
+[31m-[[https://www.bseindia.com/sensex/IndicesWatch_Weight.aspx?iname=BSE500&index_Code]{.underline}](https://www.bseindia.com/sensex/IndicesWatch_Weight.aspx?iname=BSE500&index_Code=17)**[m
+[32m+[m[32mComprehensive financial analysis of EICHER Motors Limited (EICHERMOT) covering FY 2020-21 to FY 2024-25 (5 years), including:[m
+[32m+[m[32m- Balance Sheet, Income Statement, and Cash Flow Analysis[m
+[32m+[m[32m- Common-Size Financial Statements[m
+[32m+[m[32m- Ratio Analysis with Interpretations[m
+[32m+[m[32m- SIP Investment Analysis with Actual Market Data[m
+[32m+[m[32m- Management Commentary and Key Findings[m
+ [m
+[31m-[**[=17]{.underline}**](https://www.bseindia.com/sensex/IndicesWatch_Weight.aspx?iname=BSE500&index_Code=17)[m
+[32m+[m[32m**Group Project for Foundations of Finance Course**[m
+ [m
+[31m-Please fill in the google sheet (already shared with you) with the name[m
+[31m-of your company and group members. (First come first serve -- No two[m
+[31m-groups to have same company)[m
+[32m+[m[32m## 📁 Project Structure[m
+ [m
+[31m-Pay special emphasis on **Notes to Accounts.**[m
+[31m-[m
+[31m-**The balance sheet and income statements should be downloaded from the[m
+[31m-company's**[m
+[31m-[m
+[31m-**website or BSE/NSE website. NO DOWNLOADS FROM ANY OTHER SITE**[m
+[31m-[m
+[31m-**Broad outline of report. (max 18-20 pages) (excluding annexures)**[m
+[31m-[m
+[31m--   Brief description of the company, its nature of business, industry[m
+[31m-    it operates in, board of directors etc.[m
+[31m-[m
+[31m--   Prepare a common size Balance Sheet and Income statement for the[m
+[31m-    last five years.[m
+[31m-[m
+[31m--   Do a ratio analysis of the last five years (year ending March, 2025[m
+[31m-    2024, 2023, 2022 2021). Mention the importance of the ratio and your[m
+[31m-    observations. (observe trends if any). You can include more ratios[m
+[31m-    than what have been discussed in class.[m
+[31m-[m
+[31m--   Give your interpretation of the operations of the company based on[m
+[31m-    ratio analysis.[m
+[31m-[m
+[31m--   Significant accounting policies and management commentary.[m
+[31m-[m
+[31m--   Significant news items about the company in the last 6 months.[m
+[32m+[m[32m```[m
+[32m+[m[32mFF_Project/[m
+[32m+[m[32m├── Eicher_Financial_Analysis_Report.tex    # Main LaTeX report (18-20 pages)[m
+[32m+[m[32m├── EICHER_Financial_Analysis.xlsx          # Complete financial analysis workbook[m
+[32m+[m[32m├── SIP_Actual_Results.xlsx                 # SIP investment calculation annexure[m
+[32m+[m[32m├── README.md                               # This file - project documentation[m
+[32m+[m[32m├── Readme.md                               # Project instructions from course[m
+[32m+[m[32m├── CHECKLIST.md                            # Submission requirements[m
+[32m+[m[32m├── REPORT_COMPILATION_INSTRUCTIONS.md      # LaTeX compilation guide[m
+[32m+[m[32m├── FINAL_PROJECT_SUMMARY.md                # Project summary[m
+[32m+[m[32m├── Eicher-logo-640x323.jpg                 # Company logo[m
+[32m+[m[32m├── Stock price on first trading day.csv    # Market data for SIP analysis[m
+[32m+[m[32m├── data/                                   # Raw CSV data (5 years)[m
+[32m+[m[32m│   └── raw_csv/[m
+[32m+[m[32m│       ├── 2020-2021/                      # Balance sheet, income, cash flow[m
+[32m+[m[32m│       ├── 2021-2022/[m
+[32m+[m[32m│       ├── 2022-2023/[m
+[32m+[m[32m│       ├── 2023-2024/[m
+[32m+[m[32m│       └── 2024-2025/[m
+[32m+[m[32m├── EICHER/                                 # Source PDFs (annual reports)[m
+[32m+[m[32m│   ├── Standalone-financials_20-21.pdf[m
+[32m+[m[32m│   ├── Standalonefinancial-21-22.pdf[m
+[32m+[m[32m│   ├── Standalone-Financials22-23.pdf[m
+[32m+[m[32m│   ├── Standalone-Financials23-24.pdf[m
+[32m+[m[32m│   └── Standalone-fs-24-25.pdf[m
+[32m+[m[32m├── figs/                                   # Financial charts (6 charts)[m
+[32m+[m[32m│   ├── chart_1_total_assets_growth.png[m
+[32m+[m[32m│   ├── chart_2_revenue_pat_trend.png[m
+[32m+[m[32m│   ├── chart_3_common_size_income.png[m
+[32m+[m[32m│   ├── chart_4_profitability_ratios.png[m
+[32m+[m[32m│   ├── chart_5_sip_growth.png[m
+[32m+[m[32m│   └── chart_6_key_metrics_summary.png[m
+[32m+[m[32m└── scripts/                                # Data processing & analysis scripts[m
+[32m+[m[32m    ├── process_statements.py               # Process raw CSV data[m
+[32m+[m[32m    ├── calculate_actual_sip.py             # SIP calculation with actual prices[m
+[32m+[m[32m    ├── generate_charts.py                  # Generate all financial charts[m
+[32m+[m[32m    └── generate_sip_chart.py               # SIP investment growth chart[m
+[32m+[m[32m```[m
+ [m
+[31m-```{=html}[m
+[31m-<!-- -->[m
+[32m+[m[32m## 🎯 Key Deliverables[m
+[32m+[m
+[32m+[m[32m1. **Financial Analysis Report** (LaTeX)[m
+[32m+[m[32m   - Executive Summary[m
+[32m+[m[32m   - Company Profile & Industry Overview[m
+[32m+[m[32m   - 5-Year Financial Statement Analysis[m
+[32m+[m[32m   - Common-Size Statements[m
+[32m+[m[32m   - Comprehensive Ratio Analysis[m
+[32m+[m[32m   - Operations Interpretation[m
+[32m+[m[32m   - SIP Investment Analysis[m
+[32m+[m[32m   - Key Findings & Conclusions[m
+[32m+[m
+[32m+[m[32m2. **Excel Workbook** (`EICHER_Financial_Analysis.xlsx`)[m
+[32m+[m[32m   - 26 sheets with complete financial data[m
+[32m+[m[32m   - Raw statements, common-size statements[m
+[32m+[m[32m   - Ratio analysis summaries[m
+[32m+[m
+[32m+[m[32m3. **SIP Annexure** (`SIP_Actual_Results.xlsx`)[m
+[32m+[m[32m   - Monthly SIP investment details[m
+[32m+[m[32m   - Stock prices from NSE/BSE[m
+[32m+[m[32m   - Dividend reinvestment calculations[m
+[32m+[m[32m   - Returns analysis[m
+[32m+[m
+[32m+[m[32m4. **Financial Charts** (6 charts in `figs/`)[m
+[32m+[m[32m   - Total Assets Growth[m
+[32m+[m[32m   - Revenue & PAT Trends[m
+[32m+[m[32m   - Common-Size Income Statement[m
+[32m+[m[32m   - Profitability Ratios[m
+[32m+[m[32m   - SIP Investment Growth[m
+[32m+[m[32m   - Key Metrics Summary[m
+[32m+[m
+[32m+[m[32m## 📈 Analysis Highlights[m
+[32m+[m
+[32m+[m[32m### Financial Performance (FY 2020-21 to FY 2024-25)[m
+[32m+[m[32m- **Total Assets**: ₹1,962.66 Cr → ₹13,375.59 Cr (7.8x growth)[m
+[32m+[m[32m- **Revenue**: ₹9,974 Cr → ₹22,918 Cr (2.3x growth)[m
+[32m+[m[32m- **PAT**: ₹1,179 Cr → ₹4,401 Cr (3.7x growth)[m
+[32m+[m[32m- **ROE**: 44.85% → 33.64% (strong but moderated)[m
+[32m+[m[32m- **Current Ratio**: Maintained above 2.0 (healthy liquidity)[m
+[32m+[m
+[32m+[m[32m### SIP Investment Results (₹10,000/month for 60 months)[m
+[32m+[m[32m- **Total Investment**: ₹6,00,000[m
+[32m+[m[32m- **Current Portfolio Value**: ₹10,41,724[m
+[32m+[m[32m- **Absolute Returns**: ₹4,41,724 (73.62%)[m
+[32m+[m[32m- **Annualized Returns (CAGR)**: 11.67% p.a.[m
+[32m+[m[32m- **Shares Accumulated**: 212.31 shares[m
+[32m+[m
+[32m+[m[32m## 🔧 Setup Instructions[m
+[32m+[m
+[32m+[m[32m### Prerequisites[m
+[32m+[m[32m- Python 3.8+ (
